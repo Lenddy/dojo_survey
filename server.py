@@ -1,16 +1,17 @@
 from flask import Flask,render_template,request,redirect,session
 app = Flask(__name__)
-
 app.secret_key = "key"
+
+
 #home page
-@app.route("/servey")
+@app.route("/survey")
 def survey():
     return render_template("index.html")
 
 
 #this will show the result when somthing is submited
 @app.route("/results")
-def resuls():
+def resutls():
     return render_template("results.html")
 
 
