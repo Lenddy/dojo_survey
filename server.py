@@ -11,11 +11,11 @@ def survey():
 
 #this will show the result when somthing is submited
 @app.route("/results")
-def resutls():
+def results():
     return render_template("results.html")
 
 
-# this route will redirect to "/servey"
+# this route will redirect to "/survey"
 @app.route("/process", methods = ["post"])
 def process():
     session["name"] = request.form["name"]
